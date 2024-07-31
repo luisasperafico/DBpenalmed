@@ -53,27 +53,31 @@ button {
 .pesquisa {
     background-color: rgba(130, 200, 250, 0.877);
     border: transparent;
-    border-radius: 20px 0 0 20px;
+    border-radius: 4px 0 0 4px;
+    color: white;
     padding: 10px;
-    font-size: 16px;
     width: 200px;
-    outline: none;
 }
 
-.search-btn {
-    background-color: rgba(0, 88, 151, 0.979);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
+.pesquisa:focus {
+    outline: none;
 }
 
 .search-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 88, 151, 0.979);
+    padding: 10px;
+}
+
+.search-btn:hover {
+    color: white;
+    background-color: rgba(0, 88, 151, 0.979);
 }
 
 .dropdown {
@@ -81,26 +85,17 @@ button {
     display: inline-block;
 }
 
-.dropbtn {
-    background-color: #3498dbcb;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(103, 190, 253, 0.89);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgba(0, 88, 151, 0.979);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -225,7 +220,12 @@ nav.menu-lateral:hover ~ .auth-buttons {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 300px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .news-item img {
@@ -266,5 +266,16 @@ nav.menu-lateral:hover ~ .auth-buttons {
 }
 
 .read-more:hover {
+    text-decoration: underline;
+}
+
+.read-less {
+    display: block;
+    margin: 15px;
+    color: rgba(0, 88, 151, 0.979);
+    text-decoration: none;
+}
+
+.read-less:hover {
     text-decoration: underline;
 }
