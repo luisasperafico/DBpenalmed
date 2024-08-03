@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(240, 250, 255, 0.9); /* Cor de fundo mais clara */
+    background-color: rgba(204, 234, 255, 0.979);
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -20,7 +20,7 @@ header {
 
 main {
     padding: 20px;
-    background-color: rgba(240, 250, 255, 0.9); /* Cor de fundo mais clara */
+    background-color: rgba(204, 234, 255, 0.979);
 }
 
 button {
@@ -51,23 +51,20 @@ button {
 }
 
 .pesquisa {
-    background-color: rgba(190, 210, 255, 0.9); /* Cor de fundo mais clara de azul */
+    background-color: rgba(130, 200, 250, 0.877);
     border: transparent;
     border-radius: 4px 0 0 4px;
-    color: rgba(0, 88, 151, 0.979);
+    color: white;
     padding: 10px;
     width: 200px;
-    margin: 0 auto; /* Centraliza a barra de pesquisa horizontalmente */
 }
 
 .pesquisa:focus {
     outline: none;
-    background-color: rgba(170, 190, 255, 0.9); /* Cor de fundo mais clara quando em foco */
 }
 
 .search-container {
     display: flex;
-    justify-content: center; /* Centraliza a barra de pesquisa no contêiner */
 }
 
 .search-btn {
@@ -91,9 +88,9 @@ button {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(244, 246, 248, 0.89);
+    background-color: rgba(103, 190, 253, 0.89);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgb(8, 24, 36);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -121,7 +118,7 @@ button {
 nav.menu-lateral {
     width: 90px;
     height: 100%;
-    background-color: rgb(126, 199, 252);
+    background-color: rgb(103, 190, 253);
     padding: 40px 0 40px 1%;
     box-shadow: -3px 0 0 rgb(163, 215, 252);
     position: fixed;
@@ -199,86 +196,4 @@ ul li.item-menu a .icon {
 
 nav.menu-lateral:hover ~ .auth-buttons {
     right: 260px;
-}
-
-.news-section {
-    margin-top: 20px;
-}
-
-.news-section h2 {
-    text-align: center;
-}
-
-.news-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.news-item {
-    background-color: white;
-    border: 1px solid rgba(0, 88, 151, 0.979);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.news-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.news-item img {
-    width: 100%;
-    height: auto;
-}
-
-.news-item h3 {
-    margin: 15px;
-}
-
-.news-item p {
-    margin: 15px;
-    display: none;
-}
-
-.news-item .short-text {
-    display: block;
-}
-
-.news-item.active {
-    transform: scale(1.05);
-}
-
-.news-item.active .full-text {
-    display: block;
-}
-
-.news-item.active .short-text {
-    display: none;
-}
-
-.read-more {
-    display: block;
-    margin: 15px;
-    color: rgba(0, 88, 151, 0.979);
-    text-decoration: none;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-.read-less {
-    display: block;
-    margin: 15px;
-    color: rgba(0, 88, 151, 0.979);
-    text-decoration: none;
-}
-
-.read-less:hover {
-    text-decoration: underline;
 }
